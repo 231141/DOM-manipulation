@@ -1,3 +1,18 @@
+//My own code
+
+let funPeople = ["abby", "jack", "brian"];
+let boringPeople = new Array ("abby", "jack", "brian");
+
+console.log(funPeople);
+console.log(boringPeople);
+
+let wild = ["teeth"];
+let bland = new Array ("finger");
+
+console.log(wild);
+console.log(bland);
+
+//code from class
 let numbers = [40, 100, 1];
 let points = new Array (40, 100, 1);
 
@@ -40,6 +55,7 @@ dogs.splice(1, 2, "jack russel", "doberman", "pitbull");
 
 console.log(dogs);
 
+//my own code
 function decreaseBook(){
     if (document.getElementById('ticketsBook').value != 0){
         document.getElementById('ticketsBook').value = parseInt(document.getElementById('ticketsBook').value) - 1;

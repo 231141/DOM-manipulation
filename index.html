@@ -17,20 +17,29 @@
   <div class="flexItem">
     <table class="ticketSection">
       <tr>
-        <td colspan="2"> <p>Mars Tickets</p></td>
+        <td colspan="2"> <p>Book Tickets</p></td>
         <td colspan="2">  <div class="stepper-input">
-          <button class="btn btn-left" onclick="decreaseMars();total()">-</button>
-          <input type="text" value="0" class="input-box" id="ticketsMars" onchange="total()">
-          <button class="btn btn-right" onclick="increaseMars();total()">+</button>
+          <button class="btn btn-left" onclick="decreaseBook();total()">-</button>
+          <input type="text" value="0" class="input-box" id="ticketsBook" onchange="total()">
+          <button class="btn btn-right" onclick="increaseBook();total()">+</button>
        </div></td>
       </tr>
       
       <tr>
-        <td colspan="2"> <p>Saturn Tickets</p></td>
+        <td colspan="2"> <p>Movie Tickets</p></td>
         <td colspan="2">  <div class="stepper-input">
-          <button class="btn btn-left" onclick="decreaseSaturn();total()">-</button>
-          <input type="text" value="0" class="input-box" id="ticketsSaturn" onchange="total()">
-          <button class="btn btn-right" onclick="increaseSaturn();total()">+</button>
+          <button class="btn btn-left" onclick="decreaseMovie();total()">-</button>
+          <input type="text" value="0" class="input-box" id="ticketsMovie" onchange="total()">
+          <button class="btn btn-right" onclick="increaseMovie();total()">+</button>
+       </div></td>
+      </tr>
+
+      <tr>
+        <td colspan="2"> <p>Comic-con Tickets</p></td>
+        <td colspan="2">  <div class="stepper-input">
+          <button class="btn btn-left" onclick="decreaseComic();total()">-</button>
+          <input type="text" value="0" class="input-box" id="ticketsComic" onchange="total()">
+          <button class="btn btn-right" onclick="increaseComic();total()">+</button>
        </div></td>
       </tr>
   

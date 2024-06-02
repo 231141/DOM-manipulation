@@ -1,5 +1,5 @@
 body{
-   background-color: #6cf7d4;
+   background-color: #7600a4;
 }
 .stepper-input {   
    display: flex;
@@ -18,13 +18,13 @@ body{
    cursor: pointer;
    padding: 1.5em;
    color: #fff;
-   background-color: #00a496;
-   border: 1px solid #00a496;
+   background-color: #9e3cc5;
+   border: 1px solid #9e3cc5;
    font-size: 20px;
 }
 
 .btn:hover{
-   background-color: #38e087;
+   background-color: #7600a4;
    color: #121212;
    
   }

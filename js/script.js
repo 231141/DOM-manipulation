@@ -40,38 +40,53 @@ dogs.splice(1, 2, "jack russel", "doberman", "pitbull");
 
 console.log(dogs);
 
-function decreaseMars(){
-    if (document.getElementById('ticketsMars').value != 0){
-        document.getElementById('ticketsMars').value = parseInt(document.getElementById('ticketsMars').value) - 1;
+function decreaseBook(){
+    if (document.getElementById('ticketsBook').value != 0){
+        document.getElementById('ticketsBook').value = parseInt(document.getElementById('ticketsBook').value) - 1;
     } else{
-        document.getElementById('ticketsMars').value = 0;
+        document.getElementById('ticketsBook').value = 0;
     }
 }
 
-function increaseMars(){
-    document.getElementById('ticketsMars').value = parseInt(document.getElementById('ticketsMars').value) + 1;
+function increaseBook(){
+    document.getElementById('ticketsBook').value = parseInt(document.getElementById('ticketsBook').value) + 1;
 }
 
-function decreaseSaturn(){
-    if (document.getElementById('ticketsSaturn').value != 0){
-        document.getElementById('ticketsSaturn').value = parseInt(document.getElementById('ticketsSaturn').value) - 1;
+function decreaseMovie(){
+    if (document.getElementById('ticketsMovie').value != 0){
+        document.getElementById('ticketsMovie').value = parseInt(document.getElementById('ticketsMovie').value) - 1;
     } else{
-        document.getElementById('ticketsSaturn').value = 0;
+        document.getElementById('ticketsMovie').value = 0;
     }
 }
 
-function increaseSaturn(){
-    document.getElementById('ticketsSaturn').value = parseInt(document.getElementById('ticketsSaturn').value) + 1;
+function increaseMovie(){
+    document.getElementById('ticketsMovie').value = parseInt(document.getElementById('ticketsMovie').value) + 1;
 }
 
-let totalMarsCost = 0;
-let totalSaturnCost = 0;
+function decreaseComic(){
+    if (document.getElementById('ticketsComic').value != 0){
+        document.getElementById('ticketsComic').value = parseInt(document.getElementById('ticketsComic').value) - 1;
+    } else{
+        document.getElementById('ticketsComic').value = 0;
+    }
+}
+
+function increaseComic(){
+    document.getElementById('ticketsComic').value = parseInt(document.getElementById('ticketsComic').value) + 1;
+}
+
+
+let totalBookCost = 0;
+let totalMovieCost = 0;
+let totalComicCost = 0;
 let finalCost = 0;
 
 function total(){
-    totalMarsCost = parseInt(document.getElementById('ticketsMars').value) * 50;
-    totalSaturnCost = parseInt(document.getElementById('ticketsSaturn').value) * 70;
-    finalCost = totalMarsCost + totalSaturnCost;
+    totalBookCost = parseInt(document.getElementById('ticketsBook').value) * 50;
+    totalMovieCost = parseInt(document.getElementById('ticketsMovie').value) * 70;
+    totalComicCost = parseInt(document.getElementById('ticketsComic').value) * 60;
+    finalCost = totalBookCost + totalMovieCost + totalComicCost;
     document.getElementById('total').innerHTML = "R " + finalCost;
 }
 
